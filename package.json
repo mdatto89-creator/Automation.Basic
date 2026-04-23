@@ -1,0 +1,32 @@
+{
+  "name": "eaapp-automation",
+  "version": "1.0.0",
+  "description": "E2E Web UI Automation Framework for EA App using Playwright and TypeScript",
+  "main": "index.js",
+  "scripts": {
+    "test": "npx playwright test",
+    "test:headed": "npx playwright test --headed",
+    "test:debug": "npx playwright test --debug",
+    "report": "npx playwright show-report",
+    "allure:generate": "npx allure generate allure-results --clean",
+    "allure:open": "npx allure open allure-report",
+    "mcp": "npx @playwright/mcp"
+  },
+  "keywords": [
+    "playwright",
+    "typescript",
+    "automation",
+    "e2e",
+    "testing"
+  ],
+  "author": "Antigravity",
+  "license": "ISC",
+  "devDependencies": {
+    "@playwright/mcp": "^0.0.70",
+    "@playwright/test": "^1.43.1",
+    "@types/node": "^20.12.7",
+    "allure-playwright": "^2.15.1",
+    "dotenv": "^16.4.5",
+    "typescript": "^5.4.5"
+  }
+}
